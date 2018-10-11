@@ -1,12 +1,12 @@
 ﻿
 Vấn đề:
        Khi chuyển dịch ngôn ngữ của Project A, Project A sẽ chứa các file Json ngôn ngữ như hình dưới.
-       ./languages
-	       /_locale
-			/_en
-				/_Language.json
-			/_vi
-				/_Language.json
+       |_languages
+	       |_locale
+			|_en
+				|_Language.json
+			|_vi
+				|_Language.json
        
        File json ngôn ngữ tiếng Anh sẽ có định dạng
 	       {"deleteCaption":"Delete.","addgeoCaption":"Add new location","disconnect":"Disconnected","generatorAddSucc_Msg":"Add new 		generator success.","errorCaption":"Error","btCancel":"Cancel","radiustxt":"Radius ( m )"}
