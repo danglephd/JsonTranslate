@@ -1,6 +1,7 @@
 ﻿
 Vấn đề:
-    Khi chuyển dịch ngôn ngữ của Project A, Project A sẽ chứa các file Json ngôn ngữ như hình dưới.
+    
+	Khi chuyển dịch ngôn ngữ của Project A, Project A sẽ chứa các file Json ngôn ngữ như hình dưới.
 	   
        |_languages
 	       |_locale
@@ -11,10 +12,13 @@ Vấn đề:
        
     
 	File json ngôn ngữ tiếng Anh sẽ có định dạng
-	       {"deleteCaption":"Delete.","addgeoCaption":"Add new location","disconnect":"Disconnected","generatorAddSucc_Msg":"Add new generator success.","errorCaption":"Error","btCancel":"Cancel","radiustxt":"Radius ( m )"}
+	
+		{"deleteCaption":"Delete.","addgeoCaption":"Add new location","disconnect":"Disconnected","generatorAddSucc_Msg":"Add new generator success.","errorCaption":"Error","btCancel":"Cancel","radiustxt":"Radius ( m )"}
     File json ngôn ngữ tiếng Việt sẽ có định dạng
-	       {"deleteCaption":"Xóa.","addgeoCaption":"Thêm địa điểm","disconnect":"Mất kết nối","generatorAddSucc_Msg":"Thêm máy phát thành công.","errorCaption":"Thông báo","btCancel":"Bỏ qua","radiustxt":"Bán kính ( m )"}
-    Để dễ dàng trong việc quản lý các file json ngôn ngữ, ta tạo 1 file Json chung chứa cả tất cả các ngôn ngữ 
+	  
+		{"deleteCaption":"Xóa.","addgeoCaption":"Thêm địa điểm","disconnect":"Mất kết nối","generatorAddSucc_Msg":"Thêm máy phát thành công.","errorCaption":"Thông báo","btCancel":"Bỏ qua","radiustxt":"Bán kính ( m )"}
+    
+	Để dễ dàng trong việc quản lý các file json ngôn ngữ, ta tạo 1 file Json chung chứa cả tất cả các ngôn ngữ 
        {
 	    "btSave": {
 		"en": "Save",
@@ -33,7 +37,6 @@ Vấn đề:
 		"vi": "Đóng"
 	    }
 	}
-
        
     Khi đó nảy sinh vấn đề: khi thêm 1 key mới sẽ phải update cho từng file json ngôn ngữ.
 
